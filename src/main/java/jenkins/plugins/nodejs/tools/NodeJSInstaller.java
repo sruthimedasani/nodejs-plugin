@@ -284,6 +284,7 @@ public class NodeJSInstaller extends DownloadFromUrlInstaller {
             if(arch.contains("linux"))  return LINUX;
             if(arch.contains("windows"))   return WINDOWS;
             if(arch.contains("mac"))   return MAC;
+            if(arch.contains("aix"))  return LINUX;
             throw new DetectionFailedException("Unknown CPU name: "+arch);
         }
 
